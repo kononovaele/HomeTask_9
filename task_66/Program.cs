@@ -40,7 +40,7 @@ void main()
     int N = arrayInput[1];
 
     int Sum = Recursion(M, N);
-    Console.WriteLine($"\n Sum is: {Sum}");
+    Console.WriteLine($"\n M = {M}, N = {N}, Sum is: {Sum}");
 }
 
 main();
