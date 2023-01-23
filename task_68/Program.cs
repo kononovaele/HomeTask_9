@@ -51,7 +51,7 @@ void main()
     // Вычислим функцию Аккермана
     int akk = A(m, n);
 
-    Console.Write($"m = {m}, n = {n} => A(m,n) = {akk}");
+    Console.Write($"m = {m}, n = {n} => A(m,n) = {akk}\n");
 }
 
 main();
