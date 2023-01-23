@@ -21,6 +21,8 @@ int[] GetArrayFromConsole()
     return array;
 }
 
+// Выполнить рекурсию
+// Возвращает сумму чисел с digitFrom по digitTo
 int Recursion(int digitFrom, int digitTo)
 {
     if(digitFrom < digitTo) {
@@ -40,7 +42,7 @@ void main()
     int N = arrayInput[1];
 
     int Sum = Recursion(M, N);
-    Console.WriteLine($"\n M = {M}, N = {N}, Sum is: {Sum}");
+    Console.WriteLine($"\n M = {M}, N = {N}, Sum is: {Sum}\n");
 }
 
 main();
