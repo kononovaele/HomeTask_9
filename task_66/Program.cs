@@ -23,8 +23,8 @@ int[] GetArrayFromConsole()
 
 int Recursion(int digitFrom, int digitTo)
 {
-    if(digitFrom <= digitTo) {
-        digitFrom = digitFrom + Recursion(digitFrom, digitTo);
+    if(digitFrom < digitTo) {
+        digitFrom = digitFrom + Recursion(digitFrom + 1, digitTo);
     }
 
     return digitFrom;
