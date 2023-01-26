@@ -9,6 +9,8 @@
 // N = 8 -> "1, 2, 3, 4, 5, 6, 7, 8"
 //
 
+// Ввод данных. Проверка на пустую строку и NULL
+// Возвращает введенное число - целое
 int GetDigitFromConsole()
 {
     Console.Write("\nInput one digit of integer, please: ");
@@ -22,6 +24,8 @@ int GetDigitFromConsole()
     return N;
 }
 
+// Рекурсивная функция. Печатает числа от 1 до N. В виде N, N - 1, N - 2... 3, 2, 1
+// Возвращает сумму числе от 1 до N
 int Recursion(int digit)
 {
     if(digit >= 1) {
@@ -35,6 +39,8 @@ int Recursion(int digit)
     return digit;
 }
 
+// Рекурсивная функция. Печатает числа от 1 до N. В виде 1, 2, 3... N - 2, N - 1, N
+// Возвращает сумму числе от 1 до N
 int RecursionForward(int digit, int N)
 {
     if(digit <= N) {
@@ -52,11 +58,14 @@ void main()
 {
     Console.WriteLine("\n ------- Task-64 -------");
 
+    // Получить число
     int N = GetDigitFromConsole();
 
     Console.Write("\n Back output    : ");
+    // Печать чисел от 1 до N, в обратном порядке N, N - 1... 3, 2, 1
     Recursion(N);
     Console.Write("\n Forward output : ");
+    // Печать чисел от 1 до N, в прямом порядке 1, 2, 3... N - 1, N
     RecursionForward(1, N);
     Console.WriteLine("\n");
 }
