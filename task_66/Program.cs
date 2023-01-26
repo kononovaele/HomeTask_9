@@ -41,6 +41,7 @@ void main()
     int M = arrayInput[0];
     int N = arrayInput[1];
 
+    // Получимм сумму чисел с M по N
     int Sum = Recursion(M, N);
     Console.WriteLine($"\n M = {M}, N = {N}, Sum is: {Sum}\n");
 }
